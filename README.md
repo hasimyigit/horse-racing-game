@@ -1,73 +1,56 @@
-# .
+# Horse Racing Game
 
-This template should help get you started developing with Vue 3 in Vite.
+This repository contains a dynamic and interactive horse racing simulation game. Built with Vue 3 and Vite, it allows users to generate racing events, watch animated races in real-time, and track results across multiple rounds. The application leverages Vuex for robust state management and Tailwind CSS for a modern, responsive user interface.
 
-## Recommended IDE Setup
+## Key Features
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+-   **Dynamic Event Generation:** Automatically creates a full schedule of 6 racing rounds with varying distances and a unique roster of competitors.
+-   **Competitor & Schedule Management:** View the full roster of horses and the complete event schedule, which updates live as races progress.
+-   **Detailed Results:** After each round, view detailed standings, including finishing positions, completion times, and points awarded. A comprehensive results board tracks all completed races.
+-   **Responsive Design:** The interface is built to be usable across various screen sizes, from mobile devices to desktops.
+-   **Comprehensive Testing:** The project includes unit tests with Vitest and end-to-end tests with Playwright to ensure reliability.
 
-## Recommended Browser Setup
+## Tech Stack
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+-   **Framework:** Vue 3 (Composition API)
+-   **State Management:** Vuex 4
+-   **Build Tool:** Vite
+-   **Styling:** Tailwind CSS
+-   **Language:** TypeScript
+-   **Unit Testing:** Vitest
+-   **End-to-End Testing:** Playwright
 
-## Type Support for `.vue` Imports in TS
+## Getting Started
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+To run this project locally, follow these steps:
 
-## Customize configuration
+1.  **Clone the repository:**
+    ```sh
+    git clone https://github.com/hasimyigit/horse-racing-game.git
+    ```
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+2.  **Navigate to the project directory:**
+    ```sh
+    cd horse-racing-game
+    ```
 
-## Project Setup
+3.  **Install dependencies:**
+    ```sh
+    npm install
+    ```
 
-```sh
-npm install
-```
+4.  **Run the development server:**
+    ```sh
+    npm run dev
+    ```
 
-### Compile and Hot-Reload for Development
+The application will be available at `http://localhost:5173`.
 
-```sh
-npm run dev
-```
+## Available Scripts
 
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
-
-### Run End-to-End Tests with [Playwright](https://playwright.dev)
-
-```sh
-# Install browsers for the first run
-npx playwright install
-
-# When testing on CI, must build the project first
-npm run build
-
-# Runs the end-to-end tests
-npm run test:e2e
-# Runs the tests only on Chromium
-npm run test:e2e -- --project=chromium
-# Runs the tests of a specific file
-npm run test:e2e -- tests/example.spec.ts
-# Runs the tests in debug mode
-npm run test:e2e -- --debug
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+-   `npm run dev`: Starts the development server with hot module replacement.
+-   `npm run build`: Compiles the application for production.
+-   `npm run preview`: Serves the production build locally to preview it.
+-   `npm run test:unit`: Runs all unit tests using Vitest.
+-   `npm run test:e2e`: Runs all end-to-end tests using Playwright.
+-   `npm run lint`: Lints and automatically-fixes code style issues.
