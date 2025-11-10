@@ -10,12 +10,17 @@
     "dev": "vite",
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
-    "test:unit": "vitest",
-    "test:e2e": "playwright test",
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
     "lint": "eslint . --fix --cache",
-    "format": "prettier --write src/"
+    "format": "prettier --write src/",
+    "test:unit": "vitest",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:e2e:headed": "playwright test --headed",
+    "test:e2e:debug": "playwright test --debug",
+    "playwright:install": "playwright install",
+    "playwright:report": "playwright show-report"
   },
   "dependencies": {
     "vue": "^3.5.22",
@@ -39,6 +44,7 @@
     "jiti": "^2.6.1",
     "jsdom": "^27.0.1",
     "npm-run-all2": "^8.0.4",
+    "postcss": "^8.5.6",
     "prettier": "3.6.2",
     "tailwindcss": "^3.4.1",
     "typescript": "~5.9.0",
