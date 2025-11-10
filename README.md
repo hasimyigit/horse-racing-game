@@ -20,6 +20,54 @@ This repository contains a dynamic and interactive horse racing simulation game.
 -   **Unit Testing:** Vitest
 -   **End-to-End Testing:** Playwright
 
+-   src/
+├── components/ #  components
+│ ├── arena/ 
+│ ├── competitors/ # Horse cards, stats
+│ ├── results/ # Race results, standings
+│ ├── schedule/ # Race scheduling and program view
+│ ├── track/ # 
+│ └── ui/ # Generic UI elements (buttons)
+│
+├── composables/ # Vue composables for logic reuse
+│ └── useRaceFlow.ts # Handles the race flow and state transitions
+│
+├── constants/ # Global constants and configuration
+│ └── index.ts
+│
+├── store/ # Vuex store modules
+│ ├── horse/ # Horse data and management
+│ │ ├── test/ # Unit tests for horse module
+│ │ ├── composable/ # Horse-specific composables
+│ │ └── module/ # Horse Vuex module
+│ │
+│ ├── race/ # Race scheduling and progress tracking
+│ │ ├── test/
+│ │ ├── composable/
+│ │ └── module/
+│ │
+│ └── result/ # Results and standings tracking
+│ ├── test/
+│ ├── composable/
+│ ├── module/
+│ └── index.ts
+│
+├── styles/ # Global CSS styles
+│ └── main.css
+│
+├── types/ # TypeScript interfaces and enums
+│ └── index.ts
+│
+├── utils/ # Utility helpers
+│ ├── race-helper.ts # Race calculation logic and modifiers
+│ └── random.ts # Random number utilities
+│
+├── views/ # Page-level Vue components
+│ └── RacingArena.vue # Main view where the race happens
+│
+├── App.vue # Root Vue component
+└── main.ts # Application entry point
+
 ## Getting Started
 
 To run this project locally, follow these steps:
