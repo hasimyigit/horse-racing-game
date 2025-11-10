@@ -42,68 +42,68 @@ This repository contains a dynamic and interactive horse racing simulation game.
 -   **Unit Testing:** Vitest
 -   **End-to-End Testing:** Playwright
 
-Directory structure:
-└── src/
-    ├── App.vue
-    ├── components/
-    │   ├── arena/
-    │   │   └── ArenaHeader.vue
-    │   ├── competitors/
-    │   │   ├── CompetitorCard.vue
-    │   │   └── CompetitorRoster.vue
-    │   ├── results/
-    │   │   ├── EventResults.vue
-    │   │   ├── ResultsBoard.vue
-    │   │   └── RoundResult.vue
-    │   ├── schedule/
-    │   │   └── EventSchedule.vue
-    │   ├── track/
-    │   │   ├── EventCard.vue
-    │   │   ├── RaceArena.vue
-    │   │   ├── RacerComponent.vue
-    │   │   └── RacingLane.vue
-    │   └── ui/
-    │       ├── ActionButton.vue
-    │       ├── ProgressTracker.vue
-    │       └── WelcomeScreen.vue
-    ├── composables/
-    │   └── useRaceFlow.ts
-    ├── constants/
-    │   └── index.ts
-    ├── main.ts
-    ├── store/
-    │   ├── horse/
-    │   │   ├── composable/
-    │   │   │   └── index.ts
-    │   │   ├── module/
-    │   │   │   └── index.ts
-    │   │   └── __test__/
-    │   │       └── index.test.ts
-    │   ├── index.ts
-    │   ├── race/
-    │   │   ├── composable/
-    │   │   │   └── index.ts
-    │   │   ├── module/
-    │   │   │   └── index.ts
-    │   │   └── __test__/
-    │   │       └── index.test.ts
-    │   └── result/
-    │       ├── composable/
-    │       │   └── index.ts
-    │       ├── module/
-    │       │   └── index.ts
-    │       └── __test__/
-    │           └── index.test.ts
-    ├── styles/
-    │   └── main.css
-    ├── types/
-    │   └── index.ts
-    ├── utils/
-    │   ├── race-helper.ts
-    │   └── random.ts
-    ├── views/
-    │   └── RacingArena.vue
-    └── vite-env.d.ts
+## Directory structure:
+-└── src/
+-    ├── App.vue
+-    ├── components/
+-    │   ├── arena/
+-    │   │   └── ArenaHeader.vue
+-    │   ├── competitors/
+-    │   │   ├── CompetitorCard.vue
+-    │   │   └── CompetitorRoster.vue
+-    │   ├── results/
+-    │   │   ├── EventResults.vue
+-    │   │   ├── ResultsBoard.vue
+-    │   │   └── RoundResult.vue
+-    │   ├── schedule/
+-    │   │   └── EventSchedule.vue
+-    │   ├── track/
+-    │   │   ├── EventCard.vue
+-    │   │   ├── RaceArena.vue
+-    │   │   ├── RacerComponent.vue
+-    │   │   └── RacingLane.vue
+-    │   └── ui/
+-    │       ├── ActionButton.vue
+-    │       ├── ProgressTracker.vue
+-    │       └── WelcomeScreen.vue
+-    ├── composables/
+-    │   └── useRaceFlow.ts
+-    ├── constants/
+-    │   └── index.ts
+-    ├── main.ts
+-    ├── store/
+-    │   ├── horse/
+-    │   │   ├── composable/
+-    │   │   │   └── index.ts
+-    │   │   ├── module/
+-    │   │   │   └── index.ts
+-    │   │   └── __test__/
+-    │   │       └── index.test.ts
+-    │   ├── index.ts
+-    │   ├── race/
+-    │   │   ├── composable/
+-    │   │   │   └── index.ts
+-    │   │   ├── module/
+-    │   │   │   └── index.ts
+-    │   │   └── __test__/
+-    │   │       └── index.test.ts
+-    │   └── result/
+-    │       ├── composable/
+-    │       │   └── index.ts
+-    │       ├── module/
+-    │       │   └── index.ts
+-    │       └── __test__/
+-   │           └── index.test.ts
+-   ├── styles/
+-    │   └── main.css
+-    ├── types/
+-    │   └── index.ts
+-    ├── utils/
+-    │   ├── race-helper.ts
+-    │   └── random.ts
+-    ├── views/
+-    │   └── RacingArena.vue
+-    └── vite-env.d.ts
 
 ## Getting Started
 
