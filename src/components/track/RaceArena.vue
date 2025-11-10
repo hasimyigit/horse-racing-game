@@ -44,46 +44,6 @@
           />
         </div>
       </div>
-
-      <!-- Live Leaderboard -->
-      <div v-if="false" class="live-leaderboard">
-        <div class="leaderboard-header">
-          <h3>Live Leaderboard</h3>
-          <div class="live-indicator">
-            <div class="pulse-dot"></div>
-            <span>LIVE</span>
-          </div>
-        </div>
-        <div class="leaderboard-content">
-          <div
-            v-for="(horse, index) in getSortedHorses"
-            :key="horse.id"
-            class="leaderboard-item"
-            :class="{
-              first: index === 0,
-              second: index === 1,
-              third: index === 2,
-            }"
-          >
-            <div class="item-main">
-              <div class="position">{{ index + 1 }}</div>
-              <div class="horse-color" :style="{ backgroundColor: horse.color }" />
-              <div class="horse-info">
-                <span class="horse-name">{{ horse.name }}</span>
-                <div class="progress-bar">
-                  <div
-                    class="progress-fill"
-                    :style="{ width: `${getHorseProgress(horse.id.toString())}%` }"
-                  />
-                </div>
-              </div>
-              <div class="progress-text">
-                {{ Math.round(getHorseProgress(horse.id.toString())) }}%
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
 
     <!-- No Race State -->
@@ -107,12 +67,12 @@ interface Props {
 
 defineProps<Props>()
 
-const { currentRound, getHorseFinishData, getSortedHorses, getHorseProgress } = useRaceStore()
+const { currentRound, getHorseFinishData, getHorseProgress } = useRaceStore()
 </script>
 
 <style scoped>
 .race-arena {
-  @apply bg-gray-800/90 backdrop-blur-md   border-gray-700 min-h-[calc(100vh-120px)] flex flex-col;
+  @apply rounded-xl bg-gray-800/90 backdrop-blur-md   border-gray-700 min-h-[calc(100vh-120px)] flex flex-col;
 }
 
 .race-header {
@@ -165,7 +125,7 @@ const { currentRound, getHorseFinishData, getSortedHorses, getHorseProgress } = 
 }
 
 .track-container {
-  @apply flex-1 relative bg-gradient-to-b from-gray-900 to-gray-800 rounded-xl border border-gray-600 overflow-hidden;
+  @apply flex-1 relative bg-gradient-to-b from-gray-900 to-gray-800  border border-gray-600 overflow-hidden;
 }
 
 .track-background {
