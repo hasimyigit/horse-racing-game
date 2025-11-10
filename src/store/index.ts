@@ -1,8 +1,10 @@
 import { createStore, Store } from 'vuex'
 import type { HorseModule } from './horse/module'
 import horseModule from './horse/module'
-import raceModule, { RaceModule } from './race/module'
-import resultModule, { ResultModule } from './result/module'
+import type { RaceModule } from './race/module'
+import type { ResultModule } from './result/module'
+import raceModule from './race/module'
+import resultModule from './result/module'
 
 export interface StoreState {
   horse: HorseModule
